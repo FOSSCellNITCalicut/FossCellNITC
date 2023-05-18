@@ -1,14 +1,14 @@
-import React from 'react'
-import Navbar from './Components/Navbar'
-import Hero from './Components/Hero'
+import './App.css';
+import WholeteamPage from './team2';
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-    </>
-  )
+    <div className="App">
+      <header className="App-header">
+        <WholeteamPage />
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
