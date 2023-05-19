@@ -95,7 +95,7 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
-  font-size: 80%;
+  font-size: 100%;
   border-radius: 15px;
   color: #6C6C6D;
 
@@ -110,7 +110,7 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
-  font-size: 80%;
+  font-size: 100%;
   border-radius: 15px;
   color: #FFFFFF;
 }
@@ -143,9 +143,20 @@ button {
 
 
   @media only screen and (max-width: 700px) {
-  
+
+    .mainport{
+      width: 100%;
+    }
     .mainhead{
       font-size: 60px;
       width: 100%;
+    }
+
+    .bloc-tabs{
+      width: max-content;
+    }
+    .tabs{
+      width: max-content;
+      font-size: 80%;
     }
   }
