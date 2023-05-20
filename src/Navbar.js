@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import {useState} from 'react';
-import Logo from './images/Logo.svg'
+import Logo from './images/logo.svg'
 import {FaTimes,FaBars} from 'react-icons/fa'
 
 const Navbar = () => {
