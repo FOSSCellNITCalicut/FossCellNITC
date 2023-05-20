@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+
+.mainport{
+  width: 100%;
+}
+
+.toppart{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.mainhead{
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 450%;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+
+.individual{
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .avatar{
+    vertical-align: middle;
+    width: 140px;
+    height: 140px;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  .name{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100%;
+    margin-top: 5%;
+    padding-top: 2%;
+  
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  
+    color: #464646;
+  
+  }
+  .mainheads{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: space-evenly;
+  }
+
+.beneath {
+    background-image: url(./images/underpics.jpg);
+    background-size: cover;
+    padding: 7%;
+    align-items: center;
+}
+
+.Tabcontainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.bloc-tabs {
+  display: flex;
+  width: 60%;
+  background: #F8F9FA;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: #F8F9FA;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100%;
+  border-radius: 15px;
+  color: #6C6C6D;
+
+}
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs  {
+  background: #FD8318;
+  border-bottom: 1px solid transparent;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100%;
+  border-radius: 15px;
+  color: #FFFFFF;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+button {
+  border: none;
+}
+
+.content {
+  background: white;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.active-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+
+  @media only screen and (max-width: 700px) {
+
+    .mainport{
+      width: 100%;
+    }
+    .mainhead{
+      font-size: 60px;
+      width: 100%;
+    }
+
+    .bloc-tabs{
+      width: max-content;
+    }
+    .tabs{
+      width: max-content;
+      font-size: 80%;
+    }
+  }
