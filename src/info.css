@@ -26,16 +26,19 @@ img {
   width: 500px;
   height: auto;
   margin: auto;
-  padding-right: 8rem;
+  margin-right: 8rem;
+  /* padding-right: 8rem; */
 }
 .what_image {
   max-width: 100%;
   width: 500px;
   height: auto;
   margin: auto;
-  padding-left: 8rem;
+  margin-left: 8rem;
+  /* padding-left: 8rem; */
 }
 .text {
+  box-sizing: border-box;
   margin: auto;
   font-size: 20px;
   letter-spacing: 0.05rem;
@@ -79,8 +82,10 @@ img {
     max-width: 100%;
     height: auto;
     margin: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
   }
 }
 @media screen and (max-width: 765px) {
