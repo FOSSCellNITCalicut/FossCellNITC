@@ -36,7 +36,8 @@
   .avatar{
     vertical-align: middle;
     width: 140px;
-    z-index: 1;
+    height: 140px;
+    object-fit: cover;
     border-radius: 50%;
   }
   .name{
