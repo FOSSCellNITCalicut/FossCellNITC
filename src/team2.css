@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 
-.mainport{
+.mainport {
   width: 100%;
 }
 
-.toppart{
+.toppart {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.mainhead{
+.mainhead {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 700;
@@ -53,9 +53,9 @@
     text-transform: uppercase;
   
     color: #464646;
-  
-  }
-  .mainheads{
+}
+
+.mainheads{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,14 +63,55 @@
     justify-content: space-evenly;
   }
 
-.beneath {
-    background-image: url(./images/underpics.jpg);
-    background-size: cover;
-    padding: 7%;
-    align-items: center;
+.individual {
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.Tabcontainer{
+.avatar {
+  vertical-align: middle;
+  width: 140px;
+  height: 140px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.name {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100%;
+  margin-top: 5%;
+  padding-top: 2%;
+
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: #464646;
+
+}
+
+.mainheads {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  justify-content: space-evenly;
+}
+
+.beneath {
+  background-image: url(./images/underpics.jpg);
+  background-size: cover;
+  padding: 7%;
+  align-items: center;
+}
+
+.Tabcontainer {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
@@ -83,6 +124,7 @@
   box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
 }
+
 .tabs {
   padding: 15px;
   text-align: center;
@@ -101,11 +143,12 @@
   color: #6C6C6D;
 
 }
-.tabs:not(:last-child){
+
+.tabs:not(:last-child) {
   border-right: 1px solid rgba(0, 0, 0, 0.274);
 }
 
-.active-tabs  {
+.active-tabs {
   background: #FD8318;
   border-bottom: 1px solid transparent;
   font-family: 'JetBrains Mono';
@@ -143,21 +186,23 @@ button {
 }
 
 
-  @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
 
-    .mainport{
-      width: 100%;
-    }
-    .mainhead{
-      font-size: 60px;
-      width: 100%;
-    }
-
-    .bloc-tabs{
-      width: max-content;
-    }
-    .tabs{
-      width: max-content;
-      font-size: 80%;
-    }
+  .mainport {
+    width: 100%;
   }
+
+  .mainhead {
+    font-size: 60px;
+    width: 100%;
+  }
+
+  .bloc-tabs {
+    width: max-content;
+  }
+
+  .tabs {
+    width: max-content;
+    font-size: 80%;
+  }
+}
