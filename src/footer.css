@@ -1,0 +1,83 @@
+/* Common Styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .footer {
+    background-color: rgb(57, 55, 55);
+    padding-top: 100px;
+    padding-left: 18px;
+  }
+  
+  .footer_col {
+    width: 100%;
+    padding: 30px 15px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  li {
+    color: white;
+  }
+  
+  li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  li a:hover {
+    padding: 0 5px;
+    font-size: 18px;
+    color: rgb(222, 111, 33);
+  }
+  
+  .contact {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  .footer_col ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-weight: 600;
+  }
+  
+  #contact_us {
+    align-self: flex-end;
+  }
+  
+  .logo {
+    position: absolute;
+    width: 128px;
+    height: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    /* For tablets and larger screens */
+    .footer_col {
+      width: 25%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* For large screens */
+    .footer_col {
+      width: 20%;
+    }
+  }
+  

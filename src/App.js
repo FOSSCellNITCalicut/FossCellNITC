@@ -2,6 +2,7 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import WholeteamPage from './team2';
 import Info from './info';
+import Footer from './footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Hero />
         <Info />
         <WholeteamPage />
+        <Footer />
       </header>
     </div>
   );
