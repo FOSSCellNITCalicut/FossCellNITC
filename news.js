@@ -57,7 +57,7 @@ function CardList() {
     <div
       className="container-fluid"
       style={{
-        background: "linear-gradient(to right, orange, yellow)",
+        background: "linear-gradient(90deg, #fa709a 0%, #fee140 100%)",
         color: "#fff",
         padding: "20px"
       }}
