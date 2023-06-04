@@ -23,46 +23,45 @@
 }
 
 
-.individual {
-  margin-bottom: 5%;
-  margin-right: 5%;
-  margin-left: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.individual{
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+  
+  .avatar{
+    vertical-align: middle;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .name{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100%;
+    margin-top: 5%;
+    padding-top: 2%;
+  
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  
+    color: #464646;
 }
 
-.avatar {
-  vertical-align: middle;
-  width: 140px;
-  height: 140px;
-  z-index: 1;
-  border-radius: 50%;
-}
-
-.name {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 100%;
-  margin-top: 5%;
-  padding-top: 2%;
-
-  text-align: center;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-
-  color: #464646;
-
-}
-
-.mainheads {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 2%;
-  justify-content: space-evenly;
-}
+.mainheads{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: space-evenly;
+  }
 
 .beneath {
   background-image: url(./images/underpics.jpg);

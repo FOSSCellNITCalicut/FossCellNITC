@@ -16,8 +16,9 @@ function WholeteamPage() {
         <div className="mainport">
 
             <div className={"toppart"}>
-                <h1 className={"mainhead"}>MEET THE TEAM</h1>
+                <h1 className={"mainhead"}>Meet The Team</h1>
             </div>
+
 
             <div className={toggleState === 1 ? "content  active-content" : "content"}>
             
@@ -55,9 +56,9 @@ function WholeteamPage() {
                     </div>
                     <span className={"name"}>NAME<br/>POSITION</span>
                 </div>
-
-
             </div>
+
+
 
             <div className={toggleState === 2 ? "content  active-content" : "content"}>
                 
@@ -75,6 +76,8 @@ function WholeteamPage() {
                     <span className={"name"}>NAME<br/>POSITION</span>
                 </div>
             </div>
+
+
 
             <div className={toggleState === 3 ? "content  active-content" : "content"}>
                 
@@ -113,7 +116,6 @@ function WholeteamPage() {
                     <span className={"name"}>NAME<br/>POSITION</span>
                 </div>
 
-
                 <div className={"individual"}>
                     <div className="beneath">
                         <img src={img2} alt="Logo" className={"avatar"} />
@@ -134,8 +136,8 @@ function WholeteamPage() {
                     </div>
                     <span className={"name"}>NAME<br/>POSITION</span>
                 </div>
-
             </div>
+
 
             <div className="Tabcontainer">
                 <div className="bloc-tabs">
@@ -158,6 +160,7 @@ function WholeteamPage() {
                     Alumni
                     </button>
                 </div>
+                
             </div>
         </div>
     
