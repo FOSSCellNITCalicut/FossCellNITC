@@ -3,6 +3,8 @@ import Hero from './Hero'
 import WholeteamPage from './team2';
 import Info from './info';
 import Footer from './footer';
+import Card from './news';
+import CardList from './news';
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <Hero />
         <Info />
         <WholeteamPage />
+        <CardList />
         <Footer />
       </header>
     </div>
