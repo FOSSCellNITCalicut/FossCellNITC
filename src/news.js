@@ -1,5 +1,5 @@
 import React from "react";
-import "./bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 function Card(props) {
   return (
     <div className="card my-3 mx-auto" style={{ maxWidth: "300px" }}>
