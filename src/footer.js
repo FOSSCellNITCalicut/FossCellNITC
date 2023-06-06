@@ -1,11 +1,11 @@
 import "./footer.css";
-import logo from "./images/Logo.svg";
+import logo1 from "./images/Logo.svg";
 import { FaInstagram, FaTwitter, FaPaperPlane, FaDiscord, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <img className="logo" src={logo} alt="Error" />
+      <img className="logo1" src={logo1} alt="Error" />
       <div className="container">
         <div className="row">
           <div className="footer_col">
