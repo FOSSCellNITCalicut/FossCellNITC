@@ -9,13 +9,15 @@
     width: 1066px;
     height: 384px;
     background: linear-gradient(90deg, #FA709A 0%, #FEE140 100%);
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-shrink: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
 }
 
 .are-you-ready {
