@@ -58,10 +58,10 @@ li a:hover {
 }
 
 .logo1 {
-  position: absolute;
+  position: relative;
   width: 128px;
   height: 55px;
-  left: 50%;
+  left: 13%;
   transform: translateX(-50%);
   top: 20px;
 }
@@ -72,6 +72,20 @@ li a:hover {
   /* For tablets and larger screens */
   .footer_col {
     width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_col {
+    padding-left: 0;
+  }
+
+  .footer {
+    padding: 0;
+  }
+
+  .logo1 {
+    left: 53%;
   }
 }
 

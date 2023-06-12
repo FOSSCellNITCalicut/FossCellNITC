@@ -189,6 +189,7 @@
     }
 }
 
+/*for ultra small iphones*/
 @media screen and (max-width: 390px) {
     .hero-content-mobile {
         height: 6rem;
