@@ -1,8 +1,9 @@
 import React from 'react'
 import './Navbar.css'
 import {useState} from 'react';
-import Logo from './images/Logo.svg'
+import fossLogo from './images/fosslogo.svg'
 import {FaTimes,FaBars} from 'react-icons/fa'
+
 
 const Navbar = () => {
   const [isActive1, setIsActive1] = useState(true);
@@ -37,7 +38,7 @@ const Navbar = () => {
     <>
     <div className='navbar'>
       <div className='logo'>
-        <img src={Logo} alt='logo' className='logo-resizer'/>
+        <img src={fossLogo} alt='logo' className='logo-resizer'/>
       </div>
       <div className={isMobile ? "nav-items-mobile" : "nav-items"} >
         <li><a href="/" className={isActive1 ? 'active' : ''} onClick={handleClick1}>Home</a></li>
