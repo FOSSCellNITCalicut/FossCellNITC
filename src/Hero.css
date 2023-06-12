@@ -2,50 +2,74 @@
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    
     /* flex-wrap: wrap; */
     background-color: #161616;
-    width: 100%;
+    /* width: 100%; */
     height: 800px;
+    padding-inline: 3rem;
+    /* gap: 40px; */
+}
+.hero-left{
+    flex-grow: 2;
+    flex-shrink: 0;
 }
 
 .hero-content {
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 800;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 98px;
+    margin-bottom: 53px;
     text-transform: capitalize;
     color: #FFFFFF;
     letter-spacing: 0.05rem;
     margin-top: 3rem;
+    
+}
+.hero-right{
+    margin-left: auto;
+    flex-shrink: 4;
+}
+.hero-image {
+    width: 100%;
+    display: block;
+    
 }
 
 .join-us {
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 40px;
     display: flex;
     align-items: center;
     color: #FA8860;
-    margin-top: 3rem;
+    margin: 0rem;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 2rem;
+    margin-top: 53px;
 }
 
 .btn-explorenow {
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 37px;
     text-transform: capitalize;
     color: #FFFFFF;
-    width: 281px;
-    height: 70px;
+    /* width: 281px;
+    height: 70px; */
+    padding: 10px 40px;
     background: #FA8860;
     border-radius: 30px;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     cursor: pointer;
 }
 
@@ -53,28 +77,29 @@
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 37px;
     text-transform: capitalize;
     color: #3D3D3D;
     flex: none;
     order: 0;
     flex-grow: 0;
-    width: 197px;
-    height: 69px;
+    /* width: 197px;
+    height: 69px; */
+    padding: 10px 40px;
     background: #FFFFFF;
     border-radius: 30px;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     cursor: pointer;
 }
 
-.hero-left {
+/* .hero-left {
     margin-left: 4rem;
 }
 
 .hero-right {
     margin-right: 8rem;
-}
+} */
 
 .hero-content-mobile {
     display: none;
@@ -92,6 +117,44 @@
     margin-top: 3rem;
 }
 
+@media screen and (max-width: 1274px) {
+
+    .hero-content {
+        font-size: 50px;
+        line-height: 88px;
+    }
+
+    .btn-explorenow, .btn-events{
+        border-radius: 10px;
+        
+    }
+
+}
+@media screen and (max-width: 1172px) {
+
+    .hero-content {
+        font-size: 45px;
+        line-height: 80px;
+    }
+    /* .hero-right{
+        align-self: end;
+        
+    } */
+    .hero-image{
+        width: 90%;
+        margin-left: auto;
+    }
+
+    .btn-explorenow, .btn-events{
+        font-size: 18px;
+        padding: 5px 25px;
+       
+    }
+    .hero{
+        height: 650px;
+    }
+
+}
 
 @media screen and (max-width: 1000px) {
     .hero-image {
@@ -99,7 +162,10 @@
     }
 
     .hero {
-        height: 900px;
+        height: 750px;
+        padding-inline: 30px;
+        padding-block: 30px;
+        /* margin-bottom: 70px; */
     }
 
     .hero-content {
@@ -110,7 +176,7 @@
         font-family: 'JetBrains Mono';
         font-style: normal;
         font-weight: 700;
-        font-size: 48px;
+        font-size: 56px;
         color: #FFFFFF;
         display: block;
         justify-content: left;
@@ -134,11 +200,12 @@
     }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 790px) {
     .hero-content-mobile {
         font-size: 34px;
         line-height: 68px;
-        margin-left: 15px;
+        margin-left: 30px;
+        margin-top: 0;
     }
 
     /* .hero {
@@ -160,40 +227,39 @@
 
     .mobile-content {
         font-size: 20px;
-        margin-left: 15px;
+        margin-left:30px;
         line-height: 40px;
     }
+        .mobile-content p{
+            margin: 0;
+        }
 
-    .btn-explorenow {
-        width: 185px;
-        height: 50px;
+    .btn-explorenow, .btn-events {
+     
         border-radius: 5px;
         font-size: 18px;
         line-height: 18px;
-        margin-left: 15px;
-        margin-top: 24px;
+        padding: 11px 21px;
     }
 
-    .btn-events {
-        width: 135px;
-        height: 46px;
-        border-radius: 5px;
-        font-size: 18px;
-        line-height: 18px;
-        margin-left: 15px;
-        margin-top: 10px;
+    
+    .hero-btns{
+        margin-left: 30px;
+        flex-direction: column;
+        align-items: start;
     }
-
     .line-break {
         display: unset;
     }
 }
 
 /*for ultra small iphones*/
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
     .hero-content-mobile {
+        padding-top: 40px;
         height: 6rem;
         font-size: 30px;
-        line-height: 60px;
+        line-height: 50px;
+        margin-bottom: 0;
     }
 }

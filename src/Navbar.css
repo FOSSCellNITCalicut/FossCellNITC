@@ -15,11 +15,11 @@ a {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 4rem;
+    align-items: center;
+    padding: 3rem;
     /* margin-top: 1rem; */
     height: 84px;
-    background-color:
-        #161616;
+    background-color: #161616;
 }
 
 .logo {
@@ -28,10 +28,12 @@ a {
 
 .nav-items {
     display: flex;
+    justify-content: end;
+    gap: 4rem;
 }
 
 .nav-items li a {
-    margin-right: 4rem;
+    font-size: 25px;
 }
 
 .active {
@@ -44,6 +46,23 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
+
+    .nav-items li a {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .navbar {
+        /* position: relative; */
+        margin: 0;
+        padding: 30px;
+        align-items: center;
+        height: auto;
+    }
+
     .logo-resizer {
         width: 180px;
         height: 50px;
@@ -51,13 +70,14 @@ a {
 
     .nav-items-mobile {
         position: absolute;
-        display: block;
-        list-style: none;
         left: 0;
         top: 95px;
+        display: block;
+        list-style: none;
         transition: all 0.5s ease-out;
         width: 100%;
         background-color: #161616;
+
     }
 
     .nav-items-mobile li {
@@ -79,17 +99,13 @@ a {
         display: none;
     }
 
-    .logo {
+    /* .logo {
         margin: 0;
         padding: 0;
-        margin-top: 2rem;
-    }
+       
+    } */
 
-    .navbar {
-        margin: 0;
-        padding: 0;
-        /* margin-top: 2rem; */
-    }
+
 
     .mobile-menu-icon {
         display: block;
@@ -99,8 +115,26 @@ a {
         background-color: transparent;
         border: none;
         outline: none;
-        top: 40px;
+        top: 30px;
         right: 25px;
         transition: all 0.5s ease;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        /* position: relative; */
+        margin: 0;
+        padding: 20px;
+        align-items: center;
+        height: auto;
+    }
+
+    .mobile-menu-icon {
+
+        right: 20px;
+        top: 25px;
+
+
     }
 }
