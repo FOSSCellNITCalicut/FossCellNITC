@@ -1,27 +1,47 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-function Card(props) {
-  return (
-    <div className="card my-3 mx-auto" style={{ maxWidth: "300px" }}>
-      <div className="card-body">
-        <p className="card-text">
-          <small className="text-muted">{props.date}</small>
-        </p>
-        <h5 className="card-title" style={{ color: "black" }}>
-          {props.title}
-        </h5>
-        <p className="card-text" style={{ color: "gray" }}>
-          {props.text}
-        </p>
 
-        <a
-          href={props.link}
-          className=""
-          style={{ textDecoration: "none", color: "black" }}
-        >
-          Read More →
-        </a>
-      </div>
+function Card(props) {
+  const cardStyle = {
+    maxWidth: "300px",
+    border: "1px solid #ccc",
+    borderRadius: "5px",
+    margin: "10px",
+    padding: "10px",
+    background: "#fff"
+  };
+
+  const dateStyle = {
+    color: "gray",
+    fontSize: "14px"
+  };
+
+  const titleStyle = {
+    color: "black",
+    fontSize: "18px",
+    fontWeight: "bold"
+  };
+
+  const textStyle = {
+    color: "gray",
+    fontSize: "14px"
+  };
+
+  const linkStyle = {
+    textDecoration: "none",
+    color: "black",
+    fontWeight: "bold"
+  };
+
+  return (
+    <div style={cardStyle}>
+      <p style={dateStyle}>
+        <small>{props.date}</small>
+      </p>
+      <h5 style={titleStyle}>{props.title}</h5>
+      <p style={textStyle}>{props.text}</p>
+      <a href={props.link} style={linkStyle}>
+        Read More →
+      </a>
     </div>
   );
 }
@@ -53,31 +73,38 @@ function CardList() {
     }
   ];
 
+  const containerStyle = {
+    background: "linear-gradient(90deg, #fa709a 0%, #fee140 100%)",
+    color: "#fff",
+    padding: "20px"
+  };
+
+  const headingStyle = {
+    marginLeft: "80px"
+  };
+
+  const rowStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "-10px"
+  };
+
   return (
-    <div
-      className="container-fluid"
-      style={{
-        background: "linear-gradient(90deg, #fa709a 0%, #fee140 100%)",
-        color: "#fff",
-        padding: "20px"
-      }}
-    >
-      <h2 style={{ marginLeft: "80px" }}>News & Events</h2>
-      <div className="row">
-        <div className="col-md-12">
-          <div className="d-flex flex-wrap justify-content-center align-items-center">
-            {data.map((item) => (
-              <div className="col-md-4 my-4" key={item.id}>
-                <Card
-                  title={item.title}
-                  text={item.text}
-                  date={item.date}
-                  link={item.link}
-                />
-              </div>
-            ))}
+    <div style={containerStyle}>
+      <h2 style={headingStyle}>News & Events</h2>
+      <div style={rowStyle}>
+        {data.map((item) => (
+          <div style={{ flexBasis: "300px", padding: "10px" }} key={item.id}>
+            <Card
+              title={item.title}
+              text={item.text}
+              date={item.date}
+              link={item.link}
+            />
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
