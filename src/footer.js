@@ -82,10 +82,10 @@ const Footer = () => {
                 <i className="fas fa-map-marked-alt" />
                 &nbsp;&nbsp;Address
               </li>
-              <li>
+              <li className="footers-footer">
                 FOSSCELL NITC,
                 <br />
-                NIT Calicut Mukkam Road, Kattangal Calicut, Kerala 673601
+                <p>NIT Calicut Mukkam Road, Kattangal Calicut, Kerala 673601</p>
               </li>
             </ul>
           </div>
