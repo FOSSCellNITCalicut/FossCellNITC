@@ -3,7 +3,7 @@ import './Navbar.css'
 import {useState} from 'react';
 import fossLogo from './images/fosslogo.svg'
 import {FaTimes,FaBars} from 'react-icons/fa'
-import hamburgerMenu from "./images/hamburger.svg"
+
 
 const Navbar = () => {
   const [isActive1, setIsActive1] = useState(true);
