@@ -10,15 +10,7 @@ const Info = () => {
         <div class="text">
           <p class="who_title">Who we are</p>
           <p class="who_desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            dignissim arcu id ex commodo laoreet. Nullam eget risus neque. Sed
-            accumsan elementum rutrum. Ut vulputate ultricies porttitor. Nunc
-            euismod enim vehicula mi rhoncus, id maximus erat dictum. Sed varius
-            auctor risus in vulputate. Donec accumsan tortor ut dui porttitor
-            convallis. Nullam ut tellus metus. Nam viverra facilisis eros at
-            aliquam. Donec vitae lacinia odio. Donec mattis elit dui, et mollis
-            ipsum imperdiet non. Morbi eget mi ultricies, sodales augue vel,
-            consectetur elit. Sed mattis vulputate lorem quis pellentesque.
+          We are FOSSCell NITC -  a group of students from the National Institute of Technology Calicut, who are passionate about Free and Open-Source Software (FOSS). Our goal is to spread the knowledge of Free Software and raise awareness about the four fundamental freedoms that come bundled with each of these softwares. Our community is a bunch of enthusiastic free software evangelists and hobbyist developers who are committed to promoting and developing free software for the greater good.
           </p>
         </div>
         <div class="image">
@@ -43,14 +35,7 @@ const Info = () => {
         <div class="text">
           <p class="who_title">What we do</p>
           <p class="what_desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            dignissim arcu id ex commodo laoreet. Nullam eget risus neque. Sed
-            accumsan elementum rutrum. Ut vulputate ultricies porttitor. Nunc
-            euismod enim vehicula mi rhoncus, id maximus erat dictum. Sed varius
-            auctor risus in vulputate. Donec accumsan tortor ut dui porttitor
-            convallis. Nullam ut tellus metus. Nam viverra facilisis eros at
-            aliquam. Donec vitae lacinia odio. Donec mattis elit dui, et mollis
-            ipsum imperdiet non.
+          Through workshops, training sessions, and software development, we empower individuals to explore FOSS, develop new skills, and make a meaningful impact. We foster collaboration, community building, and inclusivity, organizing events like FOSSMeet to bring together global experts who share their knowledge and insights.
           </p>
         </div>
       </div>
