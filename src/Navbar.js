@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import {useState} from 'react';
 import Logo from './images/Logo.svg'
-import {FaTimes,FaBars} from 'react-icons/fa'
+import { FaTimes, FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isActive1, setIsActive1] = useState(true);
