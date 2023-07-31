@@ -5,7 +5,7 @@ import HeroImage from './images/HeroImage.svg'
 const Hero = () => {
   return (
     <>
-        <div className='hero'>
+        <div className='hero' id='home'>
             <div className='hero-left'>
                 <p className='hero-content'>Open Source<br />Coding Community<br />of NITC.</p>
                 <p className='hero-content-mobile'>Open Source Coding<br />Community of NITC.</p>

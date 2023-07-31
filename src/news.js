@@ -1,4 +1,5 @@
 import React from "react";
+import "./new.css"
 
 function Card(props) {
   const cardStyle = {
@@ -7,7 +8,8 @@ function Card(props) {
     borderRadius: "5px",
     margin: "10px",
     padding: "10px",
-    background: "#fff"
+    background: "#fff",
+    
   };
 
   const dateStyle = {
@@ -113,12 +115,13 @@ function CardList() {
   };
 
   return (
-    <div style={containerStyle}>
+    <div style={containerStyle} id="events">
       <h2 style={headingStyle}>News & Events</h2>
       <div style={rowStyle}>
         {data.map((item) => (
-          <div style={{ flexBasis: "300px", padding: "10px" }} key={item.id}>
+          <div style={{padding: "10px", minHeight: "500px"}} key={item.id}>
             <Card
+              style={{outerHeight: "500px"}}
               title={item.title}
               text={item.text}
               date={item.date}

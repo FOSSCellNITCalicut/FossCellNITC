@@ -40,10 +40,10 @@ const Navbar = () => {
         <img src={Logo} alt='logo' className='logo-resizer'/>
       </div>
       <div className={isMobile ? "nav-items-mobile" : "nav-items"} >
-        <li><a href="/" className={isActive1 ? 'active' : ''} onClick={handleClick1}>Home</a></li>
-        <li><a href="/" className={isActive2 ? 'active' : ''} onClick={handleClick2}>About Us</a></li>
-        <li><a href="/" className={isActive3 ? 'active' : ''} onClick={handleClick3}>Events</a></li>
-        <li><a href="/" className={isActive4 ? 'active' : ''} onClick={handleClick4}>Who are we</a></li>
+        <li><a href="#home" className={isActive1 ? 'active' : ''} onClick={handleClick1}>Home</a></li>
+        <li><a href="#about" className={isActive2 ? 'active' : ''} onClick={handleClick2}>About Us</a></li>
+        <li><a href="#events" className={isActive3 ? 'active' : ''} onClick={handleClick3}>Events</a></li>
+        <li><a href="#who_we" className={isActive4 ? 'active' : ''} onClick={handleClick4}>Who are we</a></li>
       </div>
       <button className='mobile-menu-icon' onClick={handleClick}>
       {isMobile?

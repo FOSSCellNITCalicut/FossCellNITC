@@ -3,6 +3,8 @@ import Hero from './Hero'
 import WholeteamPage from './team2';
 import Info from './info';
 import CardList from './news';
+import Footer from './footer';
+import Getstarted from './Getstarted';
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
         <Hero />
         <Info />
         <WholeteamPage />
-        <CardList/>
+        <CardList />
+        <Getstarted/>
+        <Footer/>
       </header>
     </div>
   );
