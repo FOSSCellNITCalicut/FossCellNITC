@@ -6,7 +6,7 @@ import WhatImage from "../../images/wwad2.png";
 const Info = () => {
   return (
     <>
-      <div class="container1">
+      <div class="container1" id="who">
         <div class="text">
           <p class="who_title">Who we are</p>
           <p class="who_desc">

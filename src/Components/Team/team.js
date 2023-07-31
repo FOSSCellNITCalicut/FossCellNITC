@@ -13,7 +13,7 @@ function WholeteamPage() {
 
     return <>
 
-        <div className="mainport">
+        <div className="mainport" id="team">
 
             <div className={"toppart"}>
                 <h1 className={"mainhead"}>Meet The Team</h1>

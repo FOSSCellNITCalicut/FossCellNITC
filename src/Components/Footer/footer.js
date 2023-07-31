@@ -12,16 +12,16 @@ const Footer = () => {
             <ul>
               <li className="heading">About</li>
               <li>
-                <a href="https://example.com/about">About FOSSCELL</a>
+                <a href="/">About FOSSCELL</a>
               </li>
               <li>
-                <a href="https://example.com/team">Our team</a>
+                <a href="/#team">Our team</a>
               </li>
               <li>
-                <a href="https://example.com/timeline">Timeline</a>
+                <a href="/#events">Timeline</a>
               </li>
               <li>
-                <a href="https://example.com/achievements">Achievements</a>
+                <a href="/#events">Achievements</a>
               </li>
             </ul>
           </div>
@@ -29,13 +29,13 @@ const Footer = () => {
             <ul>
               <li className="heading">Events</li>
               <li>
-                <a href="https://example.com/fossmeet23">FOSSMeet'23</a>
+                <a href="https://fossmeet.net/">FOSSMeet'23</a>
               </li>
               <li>
-                <a href="https://example.com/fossmeet19">FOSSMeet'19</a>
+                <a href="#events">FOSSMeet'19</a>
               </li>
               <li>
-                <a href="https://example.com/gitworkshop">Git Workshop</a>
+                <a href="#events">Git Workshop</a>
               </li>
             </ul>
           </div>
@@ -43,13 +43,13 @@ const Footer = () => {
             <ul>
               <li className="heading">Social Media</li>
               <li>
-                <a href="https://example.com/instagram">
+                <a href="https://www.instagram.com/fosscellnitc/">
                   <FaInstagram />
                   &nbsp;&nbsp;Instagram
                 </a>
               </li>
               <li>
-                <a href="https://example.com/twitter">
+                <a href="https://twitter.com/fosscell">
                   <FaTwitter />
                   &nbsp;&nbsp;Twitter
                 </a>
@@ -84,7 +84,7 @@ const Footer = () => {
               </li>
               <li className="footers-footer">
                 FOSSCELL NITC,
-                <br />
+                {/* <br /> */}
                 <p>NIT Calicut Mukkam Road, Kattangal Calicut, Kerala 673601</p>
               </li>
             </ul>

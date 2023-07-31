@@ -92,19 +92,21 @@ function CardList() {
   };
 
   return (
-    <div style={containerStyle}>
-      <h2 style={headingStyle}>News & Events</h2>
-      <div style={rowStyle}>
-        {data.map((item) => (
-          <div style={{ flexBasis: "300px", padding: "10px" }} key={item.id}>
-            <Card
-              title={item.title}
-              text={item.text}
-              date={item.date}
-              link={item.link}
-            />
-          </div>
-        ))}
+    <div id = "events">
+      <div style={containerStyle}>
+        <h2 style={headingStyle}>News & Events</h2>
+        <div style={rowStyle}>
+          {data.map((item) => (
+            <div style={{ flexBasis: "300px", padding: "10px" }} key={item.id}>
+              <Card
+                title={item.title}
+                text={item.text}
+                date={item.date}
+                link={item.link}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

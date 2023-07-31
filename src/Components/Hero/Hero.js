@@ -15,7 +15,11 @@ const Hero = () => {
                 <p className='join-us'>Join us and make a difference</p>
                 <button className='btn-explorenow'>Explore Now</button>
                 <br className='line-break'/>
-                <button className='btn-events'>Events</button>
+                <a href="/#events">
+                  <button className='btn-events'>
+                      Events
+                  </button>
+                </a>
             </div>
             <div className='hero-right'>
                 <img src={HeroImage} alt='FossCell NITC' className='hero-image'/>
