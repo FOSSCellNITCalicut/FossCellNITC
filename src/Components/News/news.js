@@ -4,9 +4,9 @@ import Modal from "react-modal";
 function Card(props) {
   const [showModal, setShowModal] = useState(false);
   const [showFullContent, setShowFullContent] = useState(false);
-  const toggleContent = () => {
-      setShowFullContent(!showFullContent);
-    };
+  // const toggleContent = () => {
+  //     setShowFullContent(!showFullContent);
+  //   };
     const openModal = () => {
     setShowModal(true);
   };
