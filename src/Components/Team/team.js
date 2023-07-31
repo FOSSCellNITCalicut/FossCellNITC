@@ -1,6 +1,6 @@
-import img1 from "./images/img1.jpg"
-import img2 from "./images/img2.jpeg"
-import './team2.css';
+import img1 from "../../images/img1.jpg"
+import img2 from "../../images/img2.jpeg"
+import './team.css';
 import { useState } from "react";
 
 function WholeteamPage() {

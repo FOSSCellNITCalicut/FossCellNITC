@@ -1,10 +1,10 @@
-import Navbar from './Navbar';
-import Hero from './Hero';
-import Info from './info';
-import News from './news';
-import WholeteamPage from './team2';
-import Getstarted from './Getstarted';
-import Footer from './footer';
+import Navbar from './Components/Navbar/Navbar.js';
+import Hero from './Components/Hero/Hero';
+import Info from './Components/Info/info';
+import News from './Components/News/news';
+import Team from './Components/Team/team';
+import Getstarted from './Components/Cards/Getstarted';
+import Footer from './Components/Footer/footer';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Hero />
         <Info />
         <News />
-        <WholeteamPage />
+        <Team />
         <Getstarted />
         <Footer />
       </header>

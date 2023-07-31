@@ -64,7 +64,7 @@
   }
 
 .beneath {
-  background-image: url(./images/underpics.jpg);
+  background-image: url(../../images/underpics.jpg);
   background-size: cover;
   padding: 7%;
   align-items: center;

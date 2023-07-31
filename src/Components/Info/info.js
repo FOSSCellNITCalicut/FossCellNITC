@@ -1,7 +1,7 @@
 import React from "react";
 import "./info.css";
-import WhoImage from "./images/wwad1.png";
-import WhatImage from "./images/wwad2.png";
+import WhoImage from "../../images/wwad1.png";
+import WhatImage from "../../images/wwad2.png";
 
 const Info = () => {
   return (
