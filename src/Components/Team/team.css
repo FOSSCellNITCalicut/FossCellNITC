@@ -30,13 +30,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2%;
+    width: 250px;
+    height: 250px;
   }
-  
+
   .avatar{
     vertical-align: middle;
-    width: 140px;
-    height: 140px;
+    width: 160px;
     object-fit: cover;
     border-radius: 50%;
   }
@@ -64,10 +64,13 @@
   }
 
 .beneath {
-  background-image: url(../../images/underpics.jpg);
-  background-size: cover;
-  padding: 7%;
-  align-items: center;
+    background-image: url(./images/underpics.jpg);
+    background-size: cover;
+    padding: 4%;
+    align-items: center;
+    height: 140px;
+    width: 140px;
+ 
 }
 
 .Tabcontainer {
@@ -78,8 +81,6 @@
 
 .bloc-tabs {
   display: flex;
-  flex-direction:row;
-  gap:15px;
   width: 60%;
   background: #F8F9FA;
   box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
@@ -92,7 +93,7 @@
   width: 50%;
   background: #F8F9FA;
   cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.274);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
   box-sizing: content-box;
   position: relative;
   outline: none;
@@ -144,6 +145,7 @@ button {
   margin-top: 2%;
   justify-content: space-evenly;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 
